@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+  justify-content: center;
+  align-items: center;
+}
+.container-box {
+  width: 370px;
+  background-color: var(--Very-Light-Gray);
+
+  margin: auto 0;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-box .up-h2 {
+  font-weight: 400;
+  padding-top: 4rem;
+  font-size: 1.6rem;
+  color: var(--Very-Dark-Blue);
+}
+.container-box .up-h1 {
+  font-size: 600;
+  font-size: 1.75rem;
+  line-height: 2.7rem;
+  color: var(--Very-Dark-Blue);
+}
+
+.container-box .up-p {
+  font-size: 200;
+  padding-bottom: 5rem;
+  padding: 2rem 2rem 5rem 2rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: var(--Grayish-Blue);
+  text-align: center;
+}
+
+.post-area {
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Very-Light-Gray);
+
+  padding: 0 1.6rem 0rem 1.6rem;
+  width: 100%;
+  height: 100%;
+}
+.post {
+  background-color: white;
+  padding: 1rem 2rem 2rem 2rem;
+  border-radius: 0.6rem;
+  margin-bottom: 2rem;
+position: relative;
+  box-shadow: 2px 5px 6px 6px var(--Grayish-Blue);
+}
+.post h1 {
+  color: var(--Very-Dark-Blue);
+  font-size: 1.8rem;
+  padding-bottom: 0.5rem;
+}
+.post p {
+  padding-bottom: 7rem;
+  color: var(--Grayish-Blue);
+  line-height: 1.8rem;
+}
+.post img {
+position: absolute;
+right: 0;
+margin-top: -3.5rem;
+margin-right: 3rem;
+}
+.blue {
+  border-top: 5px solid var(--Blue);
+}
+
+.red {
+  border-top: 5px solid var(--Red);
+}
+.orange {
+  border-top: 5px solid var(--Orange);
+}
+
+.cyan {
+  border-top: 5px solid var(--Cyan);
+}
+
+@media (min-width: 1200px) {
+ body{
+     background-color: var(--Very-Light-Gray);
+ }
+  .container-box {
+    width: 100vw;
+    height: 100%;
+  }
+
+.container-box .up-p{
+    width: 38%;
+    padding-bottom: 3rem;
+}
+
+
+.container-box .up-h2{
+    font-size: 2.2rem;
+}
+.container-box .up-h1{
+    font-size: 2.4rem;
+}
+
+
+  .post-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    
+  }
+  .post {
+    margin: 1rem;
+  }
+  .left {
+    width: 30%;
+  }
+  .middle {
+    width: 30%;
+  }
+
+  .right {
+    width: 30%;
+  }
+}
